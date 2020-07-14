@@ -9,7 +9,7 @@ const Styles = styled.div`
         width: 100%;
     }
     .contact .item {
-        font-size: 2rem;
+        font-size: 3.5vh;
         color: #f7f7f7;
         margin-left: auto;
         margin-right: auto;

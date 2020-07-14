@@ -1,7 +1,5 @@
 import React from 'react' 
-import {Row, Col, Card, Image, Button} from 'react-bootstrap'
-import {FaReact, } from 'react-icons/fa'
-import {DiJavascript1, DiPostgresql, DiRuby } from 'react-icons/di'
+import {Row} from 'react-bootstrap'
 import styled from 'styled-components'
 
 const Styles = styled.div`
@@ -11,13 +9,14 @@ const Styles = styled.div`
         justify-content: center;
         background: rgb(255,255,255,0.5);
         margin-top: 5vh;
-        width: 60%;
+        width: 80%;
         padding: 1rem;
         border-radius: 10px;
     }
     .blog-title {
         margin-top: 8vh;
         text-align: center;
+
     }
     .blog-title div {
         font-size: 2rem;

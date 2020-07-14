@@ -36,27 +36,16 @@ const Styles = styled.div`
     margin-left: 0;
     border-bottom: white solid 1px;
   }
-  .title {
-    color: #f7f7f7;
-    font-size: 2.5rem;
-    margin-top: 15vh;
-    text-align: center;
-    span {
-      font-size: 3.5rem;
-      color: #e76f51;
-      font-weight: 800;
-    }
-  }
   .nav-list {
-    margin-top: 2rem;
+    margin-top: 4vh;
     text-align: right;
-    font-size: 2rem;
+    font-size: 3.5vh;
     color: #f7f7f7;
   }
   .nav-list .list-item {
     background: rgb(0,0,0,0);
     border: none;
-    border-bottom: rgb(255,255,255,0.5) solid 1px;
+    border-bottom: rgb(255,255,255,0.5) solid .15vh;
     cursor: pointer;
     &:hover {
       color: #e76f51;
@@ -71,7 +60,7 @@ const Styles = styled.div`
 
 class App extends React.Component {
   state ={
-    show: 2,
+    show: 0,
     formShow: false,
   }
   render() {

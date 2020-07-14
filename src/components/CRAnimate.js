@@ -13,8 +13,20 @@ margin-right: auto;
     .title-text {
         color: #f7f7f7;
         text-align: center;
-        font-size: 2rem;
+        font-size: 3.5vh;
         margin-bottom: 5vh;
+    }
+    
+    .title {
+    color: #f7f7f7;
+    font-size: 4.25vh;
+    margin-top: 15vh;
+    text-align: center;
+    span {
+        font-size: 6vh;
+        color: #e76f51;
+        font-weight: 800;
+    }
     }
 
 

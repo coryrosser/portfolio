@@ -28,7 +28,7 @@ const Styles = styled.div`
         box-shadow: 0 8px 6px -6px black;
     }
     .card-image {
-        max-height: 300px;
+        max-width: 100%;
         box-shadow: 0 8px 6px -6px black;
     }
     .project-card-row {
@@ -46,10 +46,11 @@ const Styles = styled.div`
         align-items: center;
         justify-content: center;
         width: 100%;
-
     }
     .link-btn {
-        width: 6.5vw;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         background: rgb(42, 157, 143, 0.8);
         border: rgb(0,0,0,0.3) solid 1px;
         cursor: pointer;
@@ -65,6 +66,57 @@ const Projects = (props) => {
         <Styles>
             <Row className='card-row'>
                 <Col xs={12}>
+                    <Card className='project-card'>
+                        <Card.Body>
+                            <Row>
+                            <Col xs={12} lg={7} xl={7}>
+                                <Image 
+                                className='card-image'
+                                src=' https://i.imgur.com/HK5cBhm.png' />
+                            </Col>
+                            <Col xs={12}  lg={7} xl={5}>
+                                <Row className='project-card-row'>
+                                    <div 
+                                    className='project-title'>
+                                        VisTrack
+                                    </div>
+                                </Row>
+                                <Row className='project-stack-row'>
+                                        <Col><FaReact/></Col>
+                                        <Col><DiJavascript1/></Col>
+                                        <Col><DiPostgresql/></Col>
+                                        <Col><DiRuby/></Col>
+                                </Row>
+                                <Row className='project-card-row'>
+                                    <div 
+                                    className='project-description'>
+                                        VisTrack is a Data Visualization app makes
+                                        Data Entry Simple and Engaging. VisTrack creates 
+                                        beautiful Charts from your data via manual entry or
+                                        by uploading any CSV/ Excel file
+                                    </div>
+                                </Row>
+                                <Row className='project-card-row'>
+                                    <Row 
+                                    className='project-links'>
+                                        <Col xs={0} md={1}/>
+                                        <Col xs={12} md={5} lg={5}>
+                                        <Button className='link-btn'>
+                                            Live Demo
+                                        </Button>
+                                        </Col>
+                                        <Col xs={12} md={5} lg={5}>
+                                        <Button className='link-btn'>
+                                            Github
+                                        </Button>
+                                        </Col>
+                                        <Col  xs={0} md={1}/>
+                                    </Row>
+                                </Row>
+                            </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
                     <Card className='project-card'>
                         <Card.Body>
                             <Row>
@@ -119,12 +171,12 @@ const Projects = (props) => {
                     <Card className='project-card'>
                         <Card.Body>
                             <Row>
-                            <Col xs={7}>
+                            <Col xs={12} lg={7} xl={7}>
                                 <Image 
                                 className='card-image'
                                 src=' https://i.imgur.com/HK5cBhm.png' />
                             </Col>
-                            <Col xs={5}>
+                            <Col xs={12}  lg={7} xl={5}>
                                 <Row className='project-card-row'>
                                     <div 
                                     className='project-title'>
@@ -150,12 +202,12 @@ const Projects = (props) => {
                                     <Row 
                                     className='project-links'>
                                         <Col />
-                                        <Col>
+                                        <Col xs={12} md={5} lg={3}>
                                         <Button className='link-btn'>
                                             Live Demo
                                         </Button>
                                         </Col>
-                                        <Col >
+                                        <Col xs={12} md={5} lg={3}>
                                         <Button className='link-btn'>
                                             Github
                                         </Button>
@@ -167,57 +219,8 @@ const Projects = (props) => {
                             </Row>
                         </Card.Body>
                     </Card>
-                    <Card className='project-card'>
-                        <Card.Body>
-                            <Row>
-                            <Col xs={7}>
-                                <Image 
-                                className='card-image'
-                                src=' https://i.imgur.com/HK5cBhm.png' />
-                            </Col>
-                            <Col xs={5}>
-                                <Row className='project-card-row'>
-                                    <div 
-                                    className='project-title'>
-                                        VisTrack
-                                    </div>
-                                </Row>
-                                <Row className='project-stack-row'>
-                                        <Col><FaReact/></Col>
-                                        <Col><DiJavascript1/></Col>
-                                        <Col><DiPostgresql/></Col>
-                                        <Col><DiRuby/></Col>
-                                </Row>
-                                <Row className='project-card-row'>
-                                    <div 
-                                    className='project-description'>
-                                        VisTrack is a Data Visualization app makes
-                                        Data Entry Simple and Engaging. VisTrack creates 
-                                        beautiful Charts from your data via manual entry or
-                                        by uploading any CSV/ Excel file
-                                    </div>
-                                </Row>
-                                <Row className='project-card-row'>
-                                    <Row 
-                                    className='project-links'>
-                                        <Col />
-                                        <Col>
-                                        <Button className='link-btn'>
-                                            Live Demo
-                                        </Button>
-                                        </Col>
-                                        <Col >
-                                        <Button className='link-btn'>
-                                            Github
-                                        </Button>
-                                        </Col>
-                                        <Col />
-                                    </Row>
-                                </Row>
-                            </Col>
-                            </Row>
-                        </Card.Body>
-                    </Card>
+
+                    
                 </Col>
             </Row>
         </Styles>
