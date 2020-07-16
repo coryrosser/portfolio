@@ -3,6 +3,7 @@ import {Row, Col, Card, Image, Button} from 'react-bootstrap'
 import {FaReact, } from 'react-icons/fa'
 import {DiJavascript1, DiPostgresql, DiRuby } from 'react-icons/di'
 import styled from 'styled-components'
+import chstudios from '../assets/images/chstudios.PNG'
 
 const Styles = styled.div`
     .project-title-row{
@@ -41,6 +42,7 @@ const Styles = styled.div`
     }
     .project-stack-row {
         font-size: 2rem;
+        text-align: center;
     }
     .project-links {
         align-items: center;
@@ -66,6 +68,7 @@ const Projects = (props) => {
         <Styles>
             <Row className='card-row'>
                 <Col xs={12}>
+                    
                     <Card className='project-card'>
                         <Card.Body>
                             <Row>
@@ -101,14 +104,22 @@ const Projects = (props) => {
                                     className='project-links'>
                                         <Col xs={0} md={1}/>
                                         <Col xs={12} md={5} lg={5}>
-                                        <Button className='link-btn'>
+                                            <a target="_blank" 
+                                            rel="noopener noreferrer"
+                                            href='https://vistrack.herokuapp.com'>                                        
+                                            <Button className='link-btn'>
                                             Live Demo
-                                        </Button>
+                                            </Button>
+                                            </a>
                                         </Col>
                                         <Col xs={12} md={5} lg={5}>
-                                        <Button className='link-btn'>
+                                        <a target="_blank" 
+                                            rel="noopener noreferrer"
+                                            href='https://github.com/coryrosser/vistrackfrontend'>                                        
+                                            <Button className='link-btn'>
                                             Github
-                                        </Button>
+                                            </Button>
+                                        </a>
                                         </Col>
                                         <Col  xs={0} md={1}/>
                                     </Row>
@@ -117,108 +128,66 @@ const Projects = (props) => {
                             </Row>
                         </Card.Body>
                     </Card>
+
+                    
                     <Card className='project-card'>
                         <Card.Body>
                             <Row>
                             <Col xs={12} lg={7} xl={7}>
                                 <Image 
                                 className='card-image'
-                                src=' https://i.imgur.com/HK5cBhm.png' />
+                                src={chstudios} />
                             </Col>
                             <Col xs={12}  lg={7} xl={5}>
                                 <Row className='project-card-row'>
                                     <div 
                                     className='project-title'>
-                                        VisTrack
+                                        Chad Hoffman Studios
                                     </div>
                                 </Row>
                                 <Row className='project-stack-row'>
-                                        <Col><FaReact/></Col>
-                                        <Col><DiJavascript1/></Col>
-                                        <Col><DiPostgresql/></Col>
-                                        <Col><DiRuby/></Col>
+                                        <Col><FaReact className='icn'/></Col>
+                                        <Col><DiJavascript1 className='icn'/></Col>
                                 </Row>
                                 <Row className='project-card-row'>
                                     <div 
                                     className='project-description'>
-                                        VisTrack is a Data Visualization app makes
-                                        Data Entry Simple and Engaging. VisTrack creates 
-                                        beautiful Charts from your data via manual entry or
-                                        by uploading any CSV/ Excel file
+                                        Chad Hoffman Studios is a professional photography site built
+                                        to sell photography prints and services to private users and 
+                                        Environmental Consulting Firms. The website is regularly updated
+                                        and maintained.
                                     </div>
                                 </Row>
                                 <Row className='project-card-row'>
                                     <Row 
                                     className='project-links'>
-                                        <Col />
-                                        <Col xs={12} md={5} lg={3}>
-                                        <Button className='link-btn'>
+                                        <Col xs={0} md={1}/>
+                                        <Col xs={12} md={5} lg={5}>
+                                            <a target="_blank" 
+                                            rel="noopener noreferrer"
+                                            href='#'>                                        
+                                            <Button className='link-btn'>
                                             Live Demo
-                                        </Button>
+                                            </Button>
+                                            </a>
                                         </Col>
-                                        <Col xs={12} md={5} lg={3}>
-                                        <Button className='link-btn'>
+                                        <Col xs={12} md={5} lg={5}>
+                                        <a target="_blank" 
+                                            rel="noopener noreferrer"
+                                            href='https://github.com/coryrosser/chstudios'>                                        
+                                            <Button className='link-btn'>
                                             Github
-                                        </Button>
+                                            </Button>
+                                        </a>
                                         </Col>
-                                        <Col />
+                                        <Col  xs={0} md={1}/>
                                     </Row>
                                 </Row>
                             </Col>
                             </Row>
                         </Card.Body>
                     </Card>
-                    <Card className='project-card'>
-                        <Card.Body>
-                            <Row>
-                            <Col xs={12} lg={7} xl={7}>
-                                <Image 
-                                className='card-image'
-                                src=' https://i.imgur.com/HK5cBhm.png' />
-                            </Col>
-                            <Col xs={12}  lg={7} xl={5}>
-                                <Row className='project-card-row'>
-                                    <div 
-                                    className='project-title'>
-                                        VisTrack
-                                    </div>
-                                </Row>
-                                <Row className='project-stack-row'>
-                                        <Col><FaReact/></Col>
-                                        <Col><DiJavascript1/></Col>
-                                        <Col><DiPostgresql/></Col>
-                                        <Col><DiRuby/></Col>
-                                </Row>
-                                <Row className='project-card-row'>
-                                    <div 
-                                    className='project-description'>
-                                        VisTrack is a Data Visualization app makes
-                                        Data Entry Simple and Engaging. VisTrack creates 
-                                        beautiful Charts from your data via manual entry or
-                                        by uploading any CSV/ Excel file
-                                    </div>
-                                </Row>
-                                <Row className='project-card-row'>
-                                    <Row 
-                                    className='project-links'>
-                                        <Col />
-                                        <Col xs={12} md={5} lg={3}>
-                                        <Button className='link-btn'>
-                                            Live Demo
-                                        </Button>
-                                        </Col>
-                                        <Col xs={12} md={5} lg={3}>
-                                        <Button className='link-btn'>
-                                            Github
-                                        </Button>
-                                        </Col>
-                                        <Col />
-                                    </Row>
-                                </Row>
-                            </Col>
-                            </Row>
-                        </Card.Body>
-                    </Card>
+
 
                     
                 </Col>
