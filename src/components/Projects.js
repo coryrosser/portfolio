@@ -3,7 +3,7 @@ import {Row, Col, Card, Image, Button} from 'react-bootstrap'
 import {FaReact, } from 'react-icons/fa'
 import {DiJavascript1, DiPostgresql, DiRuby } from 'react-icons/di'
 import styled from 'styled-components'
-import chstudios from '../assets/images/chstudios.PNG'
+import chstudios from '../assets/images/chstudios.png'
 
 const Styles = styled.div`
     .project-title-row{
@@ -96,7 +96,7 @@ const Projects = (props) => {
                                         VisTrack is a Data Visualization app makes
                                         Data Entry Simple and Engaging. VisTrack creates 
                                         beautiful Charts from your data via manual entry or
-                                        by uploading any CSV/ Excel file
+                                        by uploading any CSV/ Excel file. Currently planning and working on new features!
                                     </div>
                                 </Row>
                                 <Row className='project-card-row'>
@@ -155,7 +155,7 @@ const Projects = (props) => {
                                         Chad Hoffman Studios is a professional photography site built
                                         to sell photography prints and services to private users and 
                                         Environmental Consulting Firms. The website is regularly updated
-                                        and maintained.
+                                        and maintained. Currently Deployed on Heroku until a proper domain is secured.
                                     </div>
                                 </Row>
                                 <Row className='project-card-row'>
@@ -165,7 +165,7 @@ const Projects = (props) => {
                                         <Col xs={12} md={5} lg={5}>
                                             <a target="_blank" 
                                             rel="noopener noreferrer"
-                                            href='#'>                                        
+                                            href='https://chadjhoffman.herokuapp.com/'>                                        
                                             <Button className='link-btn'>
                                             Live Demo
                                             </Button>

@@ -34,7 +34,9 @@ const CRAnimate = () => {
                 <Col><a target="_blank" 
                 rel="noopener noreferrer"
                 href='https://twitter.com/CortlynRosser'><FaTwitterSquare className='item'/></a> </Col>
-                <Col><a target="_blank" rel="noopener noreferrer"><FaFileAlt className='item'/></a></Col>
+                <Col><a target="_blank" 
+                rel="noopener noreferrer"
+                href='https://drive.google.com/file/d/1UapdPrT6DJ-ND1al4n70gBtf1dvaxkJQ/view?usp=sharing'><FaFileAlt className='item'/></a></Col>
             </Row>
         </Styles>
     )
